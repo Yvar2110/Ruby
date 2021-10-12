@@ -1,0 +1,23 @@
+<%= form_for @product do |fe| %>
+
+
+
+
+        <table border="1" width="300" eight="200">
+<tbody>
+        <tr> 
+
+    <div> <center><%= fe.label :name %> <%= fe.text_field :name %> </center> </div>
+
+      <div><center><%= fe.label :identi %> <%= fe.text_field :identi %> </center> </div>
+
+      <div><center><%= fe.label :cel %> <%= fe.number_field :cel %> </center></div>
+
+      <div><center> <%= fe.submit %> </center> </div>
+
+    </tr> 
+
+
+    </tbody>
+ </table>
+    <% end %>

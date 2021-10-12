@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+
+
+<html>
+  <head>
+    <title>Proyecto</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     <%= stylesheet_pack_tag'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+  <ul>
+
+ <nav class='navbar navbar-default' >
+	<div class='collapse navbar-collapse navbar-ex1-collapse' >
+			<ul class= 'nav navbar-nav'>
+				<li> <%= link_to 'Inicio', root_path %>	</li>
+				<li> <%= link_to 'Registro', root_path %>	</li>
+
+        <li><%= link_to "Añadir empleado", :action => :new %></li>
+        
+      
+			</ul>
+	</div>
+</nav>
+
+
+ </ul>
+ </div>
+  <p class="notice"><%= notice %></p>
+       <p class="alert"><%= alert %></p>
+
+
+
+
+    <%= yield %>
+  </body>
+</html>

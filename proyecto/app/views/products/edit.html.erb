@@ -1,0 +1,23 @@
+
+<%= form_for @product do |fe| %>
+
+    <div>
+            <%= fe.label :name  %>
+            <%= fe.text_field :name %>
+    </div>
+
+      <div>
+            <%= fe.label :identi %>
+            <%= fe.text_field :identi %>
+    </div>
+
+      <div>
+            <%= fe.label :cel %>
+            <%= fe.number_field :cel %>
+    </div>
+
+      <div>
+            <%= fe.submit %>
+            
+    </div>
+    <% end %>

@@ -1,0 +1,57 @@
+
+<section>
+
+    <div style="text-align:center">
+        <h2>Registro</h2>
+
+        <div> <%= link_to "Añadir empleado", :action => :new %> </div>
+
+        
+       <table border="1" width="300" eight="200" align="center">
+            <thead>
+            <br>
+            <br>
+                <tr>
+                <th>Nombre</th>
+                <th>identificacion</th>
+                <th>celular</th>
+
+            
+                </tr>
+            </thead>
+
+            <% @product.each do|product|%>
+            <tbody>
+        
+            
+                <tr>
+                    <td><%= product.name%></td>
+                    <td><%= product.identi%></td>
+                    <td><%= product.cel %></td>
+                    
+                    <td>
+                        
+                        <%= link_to "Editar", edit_product_path(product) %>
+                        
+                       <td> <%= link_to "Eliminar", product, method: :delete, confirm: "Seguro que quieres eliminar?"%></td>
+                        
+                    </td>
+                </tr>
+        <% end %>
+            </tbody>
+
+
+            
+        </table>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <div> <%= link_to "Mostrar registro" %> </div>   
+               
+       
+    </div>
+    
+</section>
